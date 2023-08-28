@@ -1,6 +1,6 @@
-# EgoLoc: Revisiting 3D Localization from Egocentric Videos with Visual Queries
+# EgoLoc: Revisiting 3D Localization from Egocentric Videos with Visual Queries (ICCV 2023) [Oral]
 
-*The implementation of 1st winner for VQ3D challenge in Ego4D Workshop at CVPR 2023.*
+*The implementation of 1st winner for VQ3D challenge in Ego4D Workshop at CVPR 2023 and ECCV 2022.*
 
 ## Readme
 
