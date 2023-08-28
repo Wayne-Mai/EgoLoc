@@ -1,4 +1,5 @@
 # EgoLoc: Revisiting 3D Localization from Egocentric Videos with Visual Queries (ICCV 2023) [Oral]
+![image](https://github.com/Wayne-Mai/EgoLoc/assets/26301932/0158ab22-8ff6-48cc-9ed3-cb7bd5e5c0c1)
 
 *The implementation of 1st winner for VQ3D challenge in Ego4D Workshop at CVPR 2023 and ECCV 2022.*
 
