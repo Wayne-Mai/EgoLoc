@@ -21,6 +21,10 @@
 
 ## Installation
 
+### Using precomputed results
+Note if you decide to use our precomputed results in all the following steps, you don't have to install COLMAP and pycolmap. Optionally, we have provided precomputed camera intrinsics and camera poses inside `data` and [this shared Google Drive folder](https://drive.google.com/drive/folders/1hmCfNT3rolj_llIRc8UUKpaw1Chppv-Y?usp=sharing). 
+
+### Start from scratch
 Install COLMAP 3.8 from the source if you want faster reconstruction. 
 ```bash
 git clone --branch 3.8 https://github.com/colmap/colmap.git
@@ -44,8 +48,6 @@ conda env create -f environment.yml
 Any python version (>=3.7,<=3.9) compatible with COLMAP 3.8 and pycolmap should work.
 
 
-### Using precomputed results
-Note if you decide to use our precomputed results in all the following steps, you don't have to install COLMAP and pycolmap. Optionally, we have provided precomputed camera intrinsics and camera poses inside `data` and [this shared Google Drive folder](https://drive.google.com/drive/folders/1hmCfNT3rolj_llIRc8UUKpaw1Chppv-Y?usp=sharing). 
 
 ## TL,DR
 
@@ -164,6 +166,9 @@ git clone https://github.com/isl-org/DPT.git
 ```
 
 2. If you have followed the previous steps to get `vq2d_val(test)_vq3d_peak_clip.json` and `data/precomputed/all_val_test_pose.json`, you can now go to [Evaluation and test](##Evaluation_and_test).
+   
+### Start from our preprocessed data
+We have extracted the depth map of required frames we need in inference in `data/clips_frames`, you can skip the installation of DPT if you have downloaded the frames nad depth maps in our drive.
 
 
 ## Evaluation and Test
