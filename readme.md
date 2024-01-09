@@ -15,7 +15,8 @@
 - [x] Add MV-aggregation code, Jan 2024
 - [x] Add pre-computed camera poses for validation and test set, Jan 2024
 - [x] Add re-organized test code, Jan 2024
-- [ ] Add visualization code
+- [ ] Example script to render MP scans and visualization code
+- [ ] Optimize the json file for readable structure 
 - [ ] Set up Github pages
 
 
@@ -66,7 +67,8 @@ Your data structure should look like this:
         - clips_frames
         - metadata
         - precomputed
-                - all_val_test_pose.json
+                - all_val_test
+_pose.json
 
 ```
 
@@ -138,7 +140,7 @@ After the alignment is done, you can extract the aligned camera poses from the r
 
 Also check `data/precomputed/all_val_test_pose.json` to see how the pose is organized.
 
->*(Note: Actually during our experiment, we find that registration accuracy can affect the pose accuracy. Our registration is far from perfect and may also fail in some clips. If VQ3D challenge can provide groundtruth camera calibration for some egocentric video frames (3-5 frames per clip) on Matterport scans, as common practice in other indoor localization benchmarks, we believe our method can have higher performance.)*
+>*(Note: Actually during our experiment, we find that registration accuracy can affect the pose accuracy. Our registration is far from perfect and may also fail in some clips. For some challenging clips we perform specific rendering from MP scans to do the coordinate system alignment for evaluation. If VQ3D challenge can provide groundtruth camera calibration for some egocentric video frames (3-5 frames per clip) on Matterport scans, as common practice in other indoor localization benchmarks, we believe our method can have higher performance.)*
 
 ### Start from our preprocessed data
 
